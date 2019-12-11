@@ -18,7 +18,7 @@ console.log(array);
 position(array,a,b);
 
 function position(array,a,b) {
-    for (var i = a; i < b; i++) {
+    for (var i = a - 1; i < b; i++) {
         var current_element = array[i];
         newArray.push(current_element)
     }
