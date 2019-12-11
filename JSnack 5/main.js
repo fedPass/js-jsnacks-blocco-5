@@ -5,14 +5,16 @@
 // hanno la posizione compresa tra “a” e “b”
 
 var numeri = [];
-var x = 4;
-var y = 8;
-
 for (var i = 0; i < 10; i++) {
     var element = generaRandom(1,50);
     numeri.push(element)
 }
 console.log(numeri);
+
+var x = generaRandom(1, numeri.length - 1);
+console.log('posizione iniziale: ' + x);
+var y = generaRandom(x + 1, numeri.length - 1);
+console.log('posizione finale: ' + y);
 
 position(numeri,x,y);
 
