@@ -4,20 +4,20 @@
 // La funzione ritornerà un nuovo array con i valori che
 // hanno la posizione compresa tra “a” e “b”
 
-var array = [];
-var a = 4;
-var b = 8;
-var newArray = [];
+var numeri = [];
+var x = 4;
+var y = 8;
 
 for (var i = 0; i < 10; i++) {
     var element = generaRandom(1,50);
-    array.push(element)
+    numeri.push(element)
 }
-console.log(array);
+console.log(numeri);
 
-position(array,a,b);
+position(numeri,x,y);
 
 function position(array,a,b) {
+    var newArray = [];
     for (var i = a - 1; i < b; i++) {
         var current_element = array[i];
         newArray.push(current_element)
